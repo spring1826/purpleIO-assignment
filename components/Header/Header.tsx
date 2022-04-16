@@ -6,6 +6,7 @@ import * as S from "./Header.style";
 interface HeaderProps {}
 
 export const Header: React.FC<HeaderProps> = (props) => {
+  // TODO: scroll시 상단에 고정
   const router = useRouter();
   return (
     <S.Wtrapper>
@@ -19,7 +20,7 @@ export const Header: React.FC<HeaderProps> = (props) => {
         </Link>
         <Link href="/stores" passHref>
           <Typography
-            className={router.pathname === "/store" ? "nav active" : "nav"}
+            className={router.pathname === "/stores" ? "nav active" : "nav"}
           >
             STORE
           </Typography>
