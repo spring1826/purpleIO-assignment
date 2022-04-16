@@ -1,7 +1,11 @@
 import type { NextPage } from "next";
+import { useStores } from "../apis/hooks";
+import StoreTemplate from "../templates/StoreTemplate/StoreTemplate";
 
 const Store: NextPage = () => {
-  return <div>Store</div>;
+  const { data, isLoading, error } = useStores();
+  console.log(data);
+  return <StoreTemplate />;
 };
 
 export default Store;
