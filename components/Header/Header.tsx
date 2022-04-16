@@ -17,7 +17,7 @@ export const Header: React.FC<HeaderProps> = (props) => {
             ABOUT
           </Typography>
         </Link>
-        <Link href="/store" passHref>
+        <Link href="/stores" passHref>
           <Typography
             className={router.pathname === "/store" ? "nav active" : "nav"}
           >

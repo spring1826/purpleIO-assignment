@@ -54,3 +54,17 @@ export const Container = styled.div`
     display: flex;
   }
 `;
+
+export const ModalContainer = styled.div`
+  width: 100%;
+  height: 100vh;
+  max-height: 900px;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 20px 40px 0 rgb(0 0 0 / 20%);
+`;

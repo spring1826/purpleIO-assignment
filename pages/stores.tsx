@@ -4,8 +4,8 @@ import StoreTemplate from "templates/StoreTemplate/StoreTemplate";
 
 const Store: NextPage = () => {
   const { data, isLoading, error } = useStores();
-  console.log(data);
-  return <StoreTemplate stores={data} />;
+
+  return isLoading ? <div>isLoading</div> : <StoreTemplate stores={data} />;
 };
 
 export default Store;

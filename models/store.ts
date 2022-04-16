@@ -4,4 +4,5 @@ export type StoreType = {
   description: string;
   image: string;
   thumb: string;
+  url?: string;
 };
