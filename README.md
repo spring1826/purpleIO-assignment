@@ -28,6 +28,8 @@ $ npm install
 $ npm run dev
 ```
 
+3. coding test 파일에 문제풀이가 있습니다
+
 ## 파일구조
 
 ```bash
